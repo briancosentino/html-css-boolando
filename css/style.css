@@ -71,9 +71,14 @@ nav{
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 2;
+        &:hover{
+            z-index: 0;
+        }
     }
     .hover-img{
-        display: none;
+        z-index: 1;
+        
         
     }
     .brand{
@@ -81,6 +86,7 @@ nav{
         margin-top: 450px;
     }
 }
+
 .card-icon{
     background-color: var(--bl-primary-light);
     color: var(--bl-primary-dark);
@@ -92,6 +98,7 @@ nav{
     span{
         font-size: 1.6rem;
     }
+    z-index: 5;
    
 }
 .tags{
@@ -102,6 +109,7 @@ nav{
     left: 0;
     top: 25rem;
     font-weight: 600;
+    z-index: 5;
    
 }
  

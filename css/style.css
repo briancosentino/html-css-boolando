@@ -6,6 +6,7 @@
     --bl-main-tag: #008000;
     --bl-footer-bg: #1a1a1a;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@
 }
 nav{
     position: fixed;
+    top: 0;
     background-color: var(--bl-nav);
     color: var(--bl-primary-light);
     width: 100%;
@@ -43,4 +45,89 @@ nav{
     display: flex;
     gap: .3rem;
     align-items: center;
+}
+
+.main-wrapper{
+    padding: 3rem 0;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+    .row-container{
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
+}
+.card{
+    width: 32.5%;
+    position: relative;
+    img{
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .hover-img{
+        display: none;
+        
+    }
+    .brand{
+        display: block;
+        margin-top: 450px;
+    }
+}
+.card-icon{
+    background-color: var(--bl-primary-light);
+    color: var(--bl-primary-dark);
+    text-align: center;
+    padding: .4rem 0.8rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    span{
+        font-size: 1.6rem;
+    }
+   
+}
+.tags{
+    display: flex;
+    gap: .4rem;
+    color: var(--bl-primary-light);
+    position: absolute;
+    left: 0;
+    top: 25rem;
+    font-weight: 600;
+   
+}
+ 
+.discount-tag{
+    background-color: var(--bl-discount-tag);
+    padding: .2rem .4rem;
+    font-size: .8rem;
+}
+.main-tag{
+    background-color: var(--bl-main-tag);
+    padding: .2rem .4rem;
+    font-size: .8rem;
+
+}
+.brand{
+    font-size: .7rem;
+    font-weight: 400;
+}
+.product{
+    font-size: .9rem;
+    
+}
+.price{
+    font-size: .8rem;
+    display: block;
+    .old-price{
+        text-decoration:line-through;
+    }
+    strong{
+        color: var(--bl-discount-tag);
+        text-decoration: none;
+    }
 }
